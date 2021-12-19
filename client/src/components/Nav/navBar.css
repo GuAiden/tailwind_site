@@ -15,5 +15,6 @@
   mx-5 dark:text-white
   font-sans
   hover:text-sky-600
-  hover:drop-shadow-2xl;
+  hover:drop-shadow-2xl
+  dark:hover:text-sky-600;
 }
