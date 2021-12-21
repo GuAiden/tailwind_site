@@ -14,11 +14,9 @@
   @apply flex
   mx-5 dark:text-white
   font-MontSerrat
-  font-light
   my-auto
   hover:text-sky-600
   transition ease-in-out duration-150
-  hover:drop-shadow-2xl
   dark:hover:text-blue-600;
 }
 

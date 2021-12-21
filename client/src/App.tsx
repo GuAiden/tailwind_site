@@ -7,7 +7,7 @@ function App(): JSX.Element {
   return (
     <>
       <NavBar />
-      <div className="dark:bg-neutral-900 h-screen dark:opacity-100 dark-transition dark:-z-50">
+      <div className="bg-white dark:bg-neutral-900 h-screen dark-transition -z-50">
         <Outlet />
       </div>
     </>
