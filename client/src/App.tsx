@@ -1,17 +1,24 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useOutletContext } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/Nav/navBar';
+import useDarkMode from './hooks/darkMode';
 
-function App(): JSX.Element {
+type ContextType = { darkTheme: boolean | null };
+
+export default function App(): JSX.Element {
+  const [darkTheme, setDarkTheme] = useDarkMode();
+  const handleMode = (): void => setDarkTheme(!darkTheme);
   return (
     <>
-      <NavBar />
+      <NavBar darkTheme={darkTheme} handleDarkTheme={handleMode} />
       <div className="bg-white dark:bg-neutral-900 h-screen dark-transition -z-50">
-        <Outlet />
+        <Outlet context={darkTheme} />
       </div>
     </>
   );
 }
 
-export default App;
+export function useDarkTheme(): ContextType {
+  return useOutletContext<ContextType>();
+}

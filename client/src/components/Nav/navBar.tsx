@@ -1,33 +1,39 @@
 import React from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import useDarkMode from '../../hooks/darkMode';
 import './navBar.css';
 
-const ThemeIcon: React.FunctionComponent = () => {
-  const [darkTheme, setDarkTheme] = useDarkMode();
-  const handleMode = (): void => setDarkTheme(!darkTheme);
-  return (
-    <>
-      {darkTheme ? (
-        <FaSun
-          size="24"
-          className="top-navigation-icon flex mx-5 my-auto"
-          onClick={handleMode}
-        ></FaSun>
-      ) : (
-        <FaMoon
-          size="24"
-          className="top-navigation-icon flex mx-5 my-auto"
-          onClick={handleMode}
-        />
-      )}
-    </>
-  );
+type NavProps = {
+  darkTheme: boolean;
+  handleDarkTheme: () => void;
 };
 
-const NavBar: React.FunctionComponent = () => (
-  <nav className="bg-white px-2 sm:px-4 py-0 md:py-1 dark:bg-neutral-900 drop-shadow-md dark:drop-shadow-md dark:shadow-gray-800/60 dark-transition z-50 dark:z-50">
+const ThemeIcon: React.FunctionComponent<NavProps> = ({
+  darkTheme,
+  handleDarkTheme,
+}: NavProps) => (
+  <>
+    {darkTheme ? (
+      <FaSun
+        size="24"
+        className="top-navigation-icon flex mx-5 my-auto"
+        onClick={handleDarkTheme}
+      ></FaSun>
+    ) : (
+      <FaMoon
+        size="24"
+        className="top-navigation-icon flex mx-5 my-auto"
+        onClick={handleDarkTheme}
+      />
+    )}
+  </>
+);
+
+const NavBar: React.FunctionComponent<NavProps> = ({
+  darkTheme,
+  handleDarkTheme,
+}: NavProps) => (
+  <nav className="bg-white px-2 sm:px-4 py-0 md:py-1 dark:bg-neutral-900 drop-shadow-md dark:drop-shadow-md dark-transition z-50 dark:z-50">
     <div className="relative py-2 px-8 lg:py-3 flex items-center justify-between text-gray-700 font-semibold text-sm leading-6 dark:z-50">
       <Link
         to="/"
@@ -60,7 +66,7 @@ const NavBar: React.FunctionComponent = () => (
         <Link to="join" className="nav-text">
           <button className="nav-button">Sign Up</button>
         </Link>
-        <ThemeIcon />
+        <ThemeIcon darkTheme={darkTheme} handleDarkTheme={handleDarkTheme} />
       </div>
     </div>
   </nav>

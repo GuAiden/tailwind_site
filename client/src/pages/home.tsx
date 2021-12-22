@@ -1,5 +1,5 @@
 /* eslint-disable global-require */
-import React, { useEffect } from 'react';
+import React from 'react';
 import './home.css';
 import graphDesign from '../assets/graph.png';
 import chartDesign from '../assets/coolChart.png';
@@ -7,6 +7,7 @@ import barDesign from '../assets/coolBar.png';
 import lightGraphDesign from '../assets/lightChart.png';
 import lightLineDesign from '../assets/lightLineChart.png';
 import lightBarDesign from '../assets/lightBar.png';
+import { useDarkTheme } from '../App';
 
 // type ChartProps = {
 //   type:
@@ -89,10 +90,7 @@ const LightImageGrid: React.FunctionComponent = () => (
 );
 
 const Home: React.FunctionComponent = () => {
-  let bodyClass = window.document.body.classList;
-  useEffect(() => {
-    bodyClass = window.document.body.classList;
-  });
+  const darkTheme = useDarkTheme();
   return (
     <>
       <div className="relative flex justify-center pointer-events-none pt-32">
@@ -108,7 +106,9 @@ const Home: React.FunctionComponent = () => {
               ASOC
             </p>
           </div>
-          {bodyClass.contains('dark') ? <DarkImageGrid /> : <LightImageGrid />}
+          <div className="dark-transition">
+            {darkTheme ? <DarkImageGrid /> : <LightImageGrid />}
+          </div>
         </div>
       </div>
     </>
