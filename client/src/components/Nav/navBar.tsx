@@ -29,6 +29,29 @@ const ThemeIcon: React.FunctionComponent<NavProps> = ({
   </>
 );
 
+type NavItemProps = {
+  path: string;
+  text: string;
+};
+
+const NavItem: React.FunctionComponent<NavItemProps> = ({
+  path,
+  text,
+}: NavItemProps) => (
+  <Link to={path} className="nav-text">
+    {text}
+  </Link>
+);
+
+const NavButton: React.FunctionComponent<NavItemProps> = ({
+  path,
+  text,
+}: NavItemProps) => (
+  <Link to={path} className="nav-text">
+    <button className="nav-button">{text}</button>
+  </Link>
+);
+
 const NavBar: React.FunctionComponent<NavProps> = ({
   darkTheme,
   handleDarkTheme,
@@ -48,24 +71,12 @@ const NavBar: React.FunctionComponent<NavProps> = ({
         ASOC
       </Link>
       <div className="flex">
-        <Link to="about" className="nav-text">
-          About
-        </Link>
-        <Link to="downloads" className="nav-text">
-          Downloads
-        </Link>
-        <Link to="careers" className="nav-text">
-          Careers
-        </Link>
-        <Link to="contact" className="nav-text">
-          Contact
-        </Link>
-        <Link to="sponsors" className="nav-text">
-          Sponsors
-        </Link>
-        <Link to="join" className="nav-text">
-          <button className="nav-button">Sign Up</button>
-        </Link>
+        <NavItem path="about" text="About" />
+        <NavItem path="downloads" text="Download" />
+        <NavItem path="careers" text="Career" />
+        <NavItem path="contact" text="Contact" />
+        <NavItem path="sponsors" text="Sponsors" />
+        <NavButton path="join" text="Sign Up" />
         <ThemeIcon darkTheme={darkTheme} handleDarkTheme={handleDarkTheme} />
       </div>
     </div>
