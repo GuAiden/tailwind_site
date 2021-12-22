@@ -52,7 +52,7 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
   endDate,
 }: EventCardProps) => (
   <>
-    <div className="relative flex-shrink-0 min-w-[30vw] min-h-[20vh] overflow-hidden rounded-3xl bg-gray-300 mx-3 p-5">
+    <div className="relative flex-shrink-0 min-w-[27.2vw] min-h-[20vh] overflow-hidden rounded-3xl bg-gray-300 mx-3 p-5">
       <h1>{title}</h1>
       <p>{description}</p>
       <h4>
@@ -124,8 +124,8 @@ const Home: React.FunctionComponent = () => {
           </svg>
         </button>
       </div>
-      <h1 className="text-center mt-5 tracking-tight font-extrabold text-2xl">
-        Events
+      <h1 className="text-center mt-5 tracking-tight font-extrabold text-2xl dark-text">
+        Upcoming Events
       </h1>
       {/* Event Space */}
       <div className="flex w-3/5 h-fit mt-5 mx-auto">

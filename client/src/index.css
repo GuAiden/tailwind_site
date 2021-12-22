@@ -5,3 +5,7 @@
 .dark-transition {
   @apply transition ease-in-out duration-300
 }
+
+.dark-text {
+  @apply font-MontSerrat dark:text-white text-black
+}
