@@ -1,0 +1,46 @@
+{
+    "events": [
+        {
+            "title": "Hello World",
+            "description": "This is the first event",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "YOYOYOYO",
+            "description": "2nd bruv",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "HIHIHI123",
+            "description": "third m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00"
+        }
+    ]
+}

@@ -12,7 +12,7 @@ export default function App(): JSX.Element {
   return (
     <>
       <NavBar darkTheme={darkTheme} handleDarkTheme={handleMode} />
-      <div className="bg-white dark:bg-neutral-900 h-screen dark-transition -z-50">
+      <div className="bg-white dark:bg-neutral-900 min-h-screen dark-transition -z-50">
         <Outlet context={darkTheme} />
       </div>
     </>

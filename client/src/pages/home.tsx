@@ -8,6 +8,7 @@ import lightGraphDesign from '../assets/images/lightChart.png';
 import lightLineDesign from '../assets/images/lightLineChart.png';
 import lightBarDesign from '../assets/images/lightBar.png';
 import { useDarkTheme } from '../App';
+import Events from './events.json';
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
@@ -35,6 +36,45 @@ const LightImageGrid: React.FunctionComponent = () => (
       <img className="light-graph-image" src={lightBarDesign} />
     </div>
   </div>
+);
+
+type EventCardProps = {
+  title: string;
+  description: string;
+  startDate: string;
+  endDate: string;
+};
+
+const EventCard: React.FunctionComponent<EventCardProps> = ({
+  title,
+  description,
+  startDate,
+  endDate,
+}: EventCardProps) => (
+  <>
+    <div className="relative flex-shrink-0 min-w-[30vw] min-h-[20vh] overflow-hidden rounded-3xl bg-gray-300 mx-3 p-5">
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <h4>
+        {startDate} {endDate}
+      </h4>
+    </div>
+  </>
+);
+
+const EventScrollView: React.FunctionComponent = () => (
+  <>
+    <div className="flex flex-nowrap flex-row px-5 overflow-x-auto">
+      {Events.events.map((event) => (
+        <EventCard
+          title={event.title}
+          description={event.description}
+          startDate={event.startDate}
+          endDate={event.endDate}
+        />
+      ))}
+    </div>
+  </>
 );
 
 const Home: React.FunctionComponent = () => {
@@ -66,7 +106,7 @@ const Home: React.FunctionComponent = () => {
         </div>
       </div>
       {/* Scroll down svg logo */}
-      <div className="flex justify-center mt-20 animate-bounce animate-pulse dark:text-white">
+      <div className="flex justify-center mt-20 animate-bounce dark:text-white">
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +124,13 @@ const Home: React.FunctionComponent = () => {
           </svg>
         </button>
       </div>
+      <h1 className="text-center mt-5 tracking-tight font-extrabold text-2xl">
+        Events
+      </h1>
       {/* Event Space */}
+      <div className="flex w-3/5 h-fit mt-5 mx-auto">
+        <EventScrollView />
+      </div>
     </>
   );
 };

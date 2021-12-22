@@ -56,7 +56,7 @@ const NavBar: React.FunctionComponent<NavProps> = ({
   darkTheme,
   handleDarkTheme,
 }: NavProps) => (
-  <nav className="bg-white px-2 sm:px-4 py-0 md:py-1 dark:bg-neutral-900 drop-shadow-md dark:drop-shadow-md dark-transition z-50 dark:z-50">
+  <nav className="bg-white px-1 sm:px-4 py-0 md:py-1 dark:bg-neutral-900 drop-shadow-md dark:drop-shadow-md dark-transition z-50 dark:z-50">
     <div className="relative py-2 px-8 lg:py-3 flex items-center justify-between text-gray-700 font-semibold text-sm leading-6 dark:z-50">
       <Link
         to="/"
