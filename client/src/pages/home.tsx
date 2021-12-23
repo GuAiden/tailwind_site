@@ -52,12 +52,15 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
   endDate,
 }: EventCardProps) => (
   <>
-    <div className="relative flex-shrink-0 min-w-[30vw] min-h-[20vh] overflow-hidden rounded-3xl dark:bg-gray-900 mx-3 snap-start dark-text shadow-xl border-2 border-pink-100">
-      <h1 className="text-center bg-blue-200 p-2 text-3xl dark:bg-neutral-800 drop-shadow-md">
+    <div
+      className="relative flex-shrink-0 min-w-[80%] min-h-[30vh] overflow-hidden rounded-3xl dark:bg-neutral-900 
+                    mx-3 snap-center dark-text shadow-xl dark:shadow-slate-700 dark:shadow-md"
+    >
+      <h1 className="text-center bg-sky-200 p-2 text-3xl dark:bg-neutral-800 drop-shadow-md">
         {title}
       </h1>
-      <p className="text-gray-400">{description}</p>
-      <h4>
+      <p className="text-gray-400 p-2">{description}</p>
+      <h4 className="p-2">
         {startDate} {endDate}
       </h4>
     </div>
@@ -95,7 +98,7 @@ const Home: React.FunctionComponent = () => {
               <h1 className="flex md:hidden items-center text-4xl tracking-widest">
                 ASOC
               </h1>
-              <h3 className="mt-32 pointer-events-none select-none italic">
+              <h3 className="mt-32 pointer-events-none select-none hidden lg:visible lg:flex italic none">
                 A society striving to provide support, growth opportunities,
                 industry exposure, and social events for actuarial students
                 during their challenging but rewarding experience at university.
@@ -107,6 +110,11 @@ const Home: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
+      <h3 className="mt-10 w-3/5 mx-auto pointer-events-none select-none lg:hidden italic none dark-text text-center">
+        A society striving to provide support, growth opportunities, industry
+        exposure, and social events for actuarial students during their
+        challenging but rewarding experience at university.
+      </h3>
       {/* Scroll down svg logo */}
       <div className="flex justify-center mt-20 animate-bounce dark:text-white">
         <button>
@@ -130,7 +138,7 @@ const Home: React.FunctionComponent = () => {
         Upcoming Events
       </h1>
       {/* Event Space */}
-      <div className="flex md:w-4/5 h-fit mt-5 mx-auto">
+      <div className="flex md:w-3/5 h-fit mx-auto">
         <EventScrollView />
       </div>
     </>
