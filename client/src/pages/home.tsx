@@ -43,6 +43,7 @@ type EventCardProps = {
   description: string;
   startDate: string;
   endDate: string;
+  coverImageURL: string;
 };
 
 const EventCard: React.FunctionComponent<EventCardProps> = ({
@@ -50,32 +51,34 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
   description,
   startDate,
   endDate,
+  coverImageURL,
 }: EventCardProps) => (
   <>
-    <div
-      className="relative flex-shrink-0 min-w-[80%] min-h-[30vh] overflow-hidden rounded-3xl dark:bg-neutral-900 
-                    mx-3 snap-center dark-text shadow-xl dark:shadow-slate-700 dark:shadow-md"
-    >
-      <h1 className="text-center bg-sky-200 p-2 text-3xl dark:bg-neutral-800 drop-shadow-md">
-        {title}
-      </h1>
+    <div className="event-card">
+      <img className="max-h-[30vh] h-fit mx-auto" src={coverImageURL} />
+      <h1 className="text-center p-2 text-3xl">{title}</h1>
       <p className="text-gray-400 p-2">{description}</p>
       <h4 className="p-2">
         {startDate} {endDate}
       </h4>
+      {/* <img
+        src="https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/248596834_2432745236857806_8208171371330292695_n.png?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=e3f864&_nc_ohc=gaXJmC40JswAX-SvcF3&_nc_oc=AQmwYdd7vrR3mhfr1yjwvw9eQapfTAWO82JogUv54AYBoj-A1Gb2YQrf2gNkf2d3Tsk&tn=stnQroAJSPBsJJPx&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT_DGG9U4OiPGjXOXBZIadTZj9CmfC6lSRHD78EBZzfTXA&oe=61C96EC4"
+        className="w-[100%] h-[100%] overflow-visible"
+      /> */}
     </div>
   </>
 );
 
 const EventScrollView: React.FunctionComponent = () => (
   <>
-    <div className="flex flex-nowrap flex-row overflow-x-auto px-20 snap-x py-10">
+    <div className="flex flex-nowrap flex-row overflow-x-auto snap-x py-10">
       {Events.events.map((event) => (
         <EventCard
           title={event.title}
           description={event.description}
           startDate={event.startDate}
           endDate={event.endDate}
+          coverImageURL={event.coverImageURL}
         />
       ))}
     </div>
@@ -134,11 +137,11 @@ const Home: React.FunctionComponent = () => {
           </svg>
         </button>
       </div>
-      <h1 className="text-center mt-5 tracking-tight font-extrabold text-2xl dark-text">
+      <h1 className="text-center mt-10 tracking-tight font-extrabold text-2xl dark-text">
         Upcoming Events
       </h1>
       {/* Event Space */}
-      <div className="flex md:w-3/5 h-fit mx-auto">
+      <div className="flex md:w-4/6 h-fit mx-auto">
         <EventScrollView />
       </div>
     </>
