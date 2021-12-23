@@ -52,9 +52,11 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
   endDate,
 }: EventCardProps) => (
   <>
-    <div className="relative flex-shrink-0 min-w-[27.2vw] min-h-[20vh] overflow-hidden rounded-3xl bg-gray-300 mx-3 p-5">
-      <h1>{title}</h1>
-      <p>{description}</p>
+    <div className="relative flex-shrink-0 min-w-[30vw] min-h-[20vh] overflow-hidden rounded-3xl dark:bg-gray-900 mx-3 snap-start dark-text shadow-xl border-2 border-pink-100">
+      <h1 className="text-center bg-blue-200 p-2 text-3xl dark:bg-neutral-800 drop-shadow-md">
+        {title}
+      </h1>
+      <p className="text-gray-400">{description}</p>
       <h4>
         {startDate} {endDate}
       </h4>
@@ -64,7 +66,7 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
 
 const EventScrollView: React.FunctionComponent = () => (
   <>
-    <div className="flex flex-nowrap flex-row px-5 overflow-x-auto">
+    <div className="flex flex-nowrap flex-row overflow-x-auto px-20 snap-x py-10">
       {Events.events.map((event) => (
         <EventCard
           title={event.title}
@@ -128,7 +130,7 @@ const Home: React.FunctionComponent = () => {
         Upcoming Events
       </h1>
       {/* Event Space */}
-      <div className="flex w-3/5 h-fit mt-5 mx-auto">
+      <div className="flex md:w-4/5 h-fit mt-5 mx-auto">
         <EventScrollView />
       </div>
     </>
