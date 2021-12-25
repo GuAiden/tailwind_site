@@ -1,14 +1,14 @@
 /* eslint-disable global-require */
-import React from "react";
-import "./home.css";
-import graphDesign from "../assets/images/graph.png";
-import chartDesign from "../assets/images/coolChart.png";
-import barDesign from "../assets/images/coolBar.png";
-import lightGraphDesign from "../assets/images/lightChart.png";
-import lightLineDesign from "../assets/images/lightLineChart.png";
-import lightBarDesign from "../assets/images/lightBar.png";
-import { useDarkTheme } from "../App";
-import Events from "./events.json";
+import React from 'react';
+import './home.css';
+import graphDesign from '../assets/images/graph.png';
+import chartDesign from '../assets/images/coolChart.png';
+import barDesign from '../assets/images/coolBar.png';
+import lightGraphDesign from '../assets/images/lightChart.png';
+import lightLineDesign from '../assets/images/lightLineChart.png';
+import lightBarDesign from '../assets/images/lightBar.png';
+import { useDarkTheme } from '../App';
+import Events from './events.json';
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
