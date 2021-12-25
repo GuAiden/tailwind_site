@@ -1,14 +1,14 @@
 /* eslint-disable global-require */
-import React from 'react';
-import './home.css';
-import graphDesign from '../assets/images/graph.png';
-import chartDesign from '../assets/images/coolChart.png';
-import barDesign from '../assets/images/coolBar.png';
-import lightGraphDesign from '../assets/images/lightChart.png';
-import lightLineDesign from '../assets/images/lightLineChart.png';
-import lightBarDesign from '../assets/images/lightBar.png';
-import { useDarkTheme } from '../App';
-import Events from './events.json';
+import React from "react";
+import "./home.css";
+import graphDesign from "../assets/images/graph.png";
+import chartDesign from "../assets/images/coolChart.png";
+import barDesign from "../assets/images/coolBar.png";
+import lightGraphDesign from "../assets/images/lightChart.png";
+import lightLineDesign from "../assets/images/lightLineChart.png";
+import lightBarDesign from "../assets/images/lightBar.png";
+import { useDarkTheme } from "../App";
+import Events from "./events.json";
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
@@ -70,19 +70,24 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
 );
 
 const EventScrollView: React.FunctionComponent = () => (
-  <div className="flex md:w-4/6 h-fit mx-auto">
-    <div className="flex flex-nowrap flex-row overflow-x-auto snap-x py-10">
-      {Events.events.map((event) => (
-        <EventCard
-          title={event.title}
-          description={event.description}
-          startDate={event.startDate}
-          endDate={event.endDate}
-          coverImageURL={event.coverImageURL}
-        />
-      ))}
+  <>
+    <h1 className="text-center mt-10 tracking-tight font-extrabold text-2xl dark-text">
+      Upcoming Events
+    </h1>
+    <div className="flex md:w-4/6 h-fit mx-auto">
+      <div className="flex flex-nowrap flex-row overflow-x-auto snap-x py-10">
+        {Events.events.map((event) => (
+          <EventCard
+            title={event.title}
+            description={event.description}
+            startDate={event.startDate}
+            endDate={event.endDate}
+            coverImageURL={event.coverImageURL}
+          />
+        ))}
+      </div>
     </div>
-  </div>
+  </>
 );
 
 const SponsorsGrid: React.FunctionComponent = () => (
@@ -115,13 +120,33 @@ const SponsorsGrid: React.FunctionComponent = () => (
   </>
 );
 
-const Home: React.FunctionComponent = () => {
+const ScrollDownIcon: React.FunctionComponent = () => (
+  <div className="flex justify-center mt-10 animate-bounce dark:text-white">
+    <button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </button>
+  </div>
+);
+
+const HomeInfo: React.FunctionComponent = () => {
   const darkTheme = useDarkTheme();
   return (
     <>
-      {/* Opening Page ASOC opening line */}
-      <div className="relative flex justify-center pointer-events-none pt-32">
-        <div className="grid grid-cols-2 w-4/6 gap-24">
+      <div className="relative flex justify-center pointer-events-none pt-10 md:pt-32">
+        <div className="grid grid-cols-2 w-5/6 md:w-4/6 gap-24">
           <div className="col-auto">
             <div className="flex flex-col dark:text-white text-black font-MontSerrat dark-transition">
               <p className="text-xl mb-5 font-semibold">ASOC</p>
@@ -134,7 +159,7 @@ const Home: React.FunctionComponent = () => {
               <h3 className="mt-32 pointer-events-none select-none hidden lg:visible lg:flex italic none">
                 A society striving to provide support, growth opportunities,
                 industry exposure, and social events for actuarial students
-                during their challenging but rewarding experience at university.
+                their challenging but rewarding experience at university.
               </h3>
             </div>
           </div>
@@ -143,39 +168,22 @@ const Home: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <h3 className="mt-10 w-3/5 mx-auto pointer-events-none select-none lg:hidden italic none dark-text text-center">
+      <h3 className="mt-10 w-5/6 md:w-3/5 mx-auto pointer-events-none select-none lg:hidden italic none dark-text md:text-center">
         A society striving to provide support, growth opportunities, industry
         exposure, and social events for actuarial students during their
         challenging but rewarding experience at university.
       </h3>
-      {/* Scroll down svg logo */}
-      <div className="flex justify-center mt-20 animate-bounce dark:text-white">
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </button>
-      </div>
-      <h1 className="text-center mt-10 tracking-tight font-extrabold text-2xl dark-text">
-        Upcoming Events
-      </h1>
-      {/* Event Space */}
-      <EventScrollView />
-      {/* Sponsor Space */}
-      <SponsorsGrid />
     </>
   );
 };
+
+const Home: React.FunctionComponent = () => (
+  <>
+    <HomeInfo />
+    <SponsorsGrid />
+    <ScrollDownIcon />
+    <EventScrollView />
+  </>
+);
 
 export default Home;
