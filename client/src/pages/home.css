@@ -27,3 +27,7 @@
   mx-5 snap-center font-MontSerrat dark:text-white text-black shadow-xl dark:shadow-slate-700 dark:shadow-md hover:shadow-xl hover:shadow-sky-300
   transition ease-linear duration-200 dark:hover:shadow-xl dark:hover:shadow-slate-700 hover:scale-105;
 }
+
+.sponsor-image {
+  @apply mx-auto w-[25%] md:w-[50%] max-h-[50%] my-auto mt-5;
+}

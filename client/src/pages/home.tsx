@@ -55,12 +55,12 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
 }: EventCardProps) => (
   <>
     <div className="event-card">
-      <img className="max-h-[30vh] h-fit mx-auto" src={coverImageURL} />
-      <h1 className="text-center p-2 text-3xl">{title}</h1>
+      <img className="max-h-[30vh] mx-auto" src={coverImageURL} />
+      {/* <h1 className="text-center p-2 text-3xl">{title}</h1>
       <p className="text-gray-400 p-2">{description}</p>
       <h4 className="p-2">
         {startDate} {endDate}
-      </h4>
+      </h4> */}
       {/* <img
         src="https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/248596834_2432745236857806_8208171371330292695_n.png?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=e3f864&_nc_ohc=gaXJmC40JswAX-SvcF3&_nc_oc=AQmwYdd7vrR3mhfr1yjwvw9eQapfTAWO82JogUv54AYBoj-A1Gb2YQrf2gNkf2d3Tsk&tn=stnQroAJSPBsJJPx&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT_DGG9U4OiPGjXOXBZIadTZj9CmfC6lSRHD78EBZzfTXA&oe=61C96EC4"
         className="w-[100%] h-[100%] overflow-visible"
@@ -70,7 +70,7 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
 );
 
 const EventScrollView: React.FunctionComponent = () => (
-  <>
+  <div className="flex md:w-4/6 h-fit mx-auto">
     <div className="flex flex-nowrap flex-row overflow-x-auto snap-x py-10">
       {Events.events.map((event) => (
         <EventCard
@@ -82,6 +82,36 @@ const EventScrollView: React.FunctionComponent = () => (
         />
       ))}
     </div>
+  </div>
+);
+
+const SponsorsGrid: React.FunctionComponent = () => (
+  <>
+    {/* <div className="flex justify-center mt-20">
+      <h2 className="dark-text text-2xl font-semibold">Sponsors</h2>
+    </div> */}
+    <div className="grid grid-cols-2 md:grid-cols-4 md:w-4/6 h-fit mx-auto mt-10">
+      <img
+        src="https://asoc.unsw.edu.au/images/web/sponsors/principal/actuaries-institute.png"
+        className="sponsor-image"
+      />
+      <img
+        src="https://asoc.unsw.edu.au/images/web/sponsors/principal/ey.png"
+        className="sponsor-image"
+      />
+      <img
+        src="https://asoc.unsw.edu.au/images/web/sponsors/principal/finity.png"
+        className="sponsor-image"
+      />
+      <img
+        src="https://asoc.unsw.edu.au/images/web/sponsors/principal/pwc.png"
+        className="sponsor-image"
+      />
+    </div>
+    <img
+      src="https://asoc.unsw.edu.au/images/web/sponsors/principal/taylorfry.png"
+      className="mx-auto w-[25%] md:w-[12.5%] max-h-[50%] my-auto mt-5"
+    />
   </>
 );
 
@@ -141,9 +171,9 @@ const Home: React.FunctionComponent = () => {
         Upcoming Events
       </h1>
       {/* Event Space */}
-      <div className="flex md:w-4/6 h-fit mx-auto">
-        <EventScrollView />
-      </div>
+      <EventScrollView />
+      {/* Sponsor Space */}
+      <SponsorsGrid />
     </>
   );
 };
