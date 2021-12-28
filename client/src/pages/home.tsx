@@ -74,7 +74,7 @@ const EventScrollView: React.FunctionComponent = () => (
     <h1 className="text-center mt-10 tracking-tight font-extrabold text-2xl dark-text">
       Upcoming Events
     </h1>
-    <div className="flex md:w-4/6 h-fit mx-auto">
+    <div className="flex md:w-4/6 h-fit mx-auto mb-20">
       <div className="flex flex-nowrap flex-row overflow-x-auto snap-x py-10">
         {Events.events.map((event) => (
           <EventCard
@@ -141,6 +141,16 @@ const ScrollDownIcon: React.FunctionComponent = () => (
   </div>
 );
 
+const SocialInfo: React.FunctionComponent = () => (
+  <>
+    <div className="absolute py-64 skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 min-w-full content-none" />
+    <h1 className="relative text-center text-2xl font-semibold font-MontSerrat mx-auto mt-48">
+      Check out our Socials!
+    </h1>
+    <div className="relative my-auto flex justify-center mt-6"> </div>
+  </>
+);
+
 const HomeInfo: React.FunctionComponent = () => {
   const darkTheme = useDarkTheme();
   return (
@@ -183,6 +193,7 @@ const Home: React.FunctionComponent = () => (
     <SponsorsGrid />
     <ScrollDownIcon />
     <EventScrollView />
+    <SocialInfo />
   </>
 );
 

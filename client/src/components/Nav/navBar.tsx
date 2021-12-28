@@ -72,8 +72,8 @@ const NavBar: React.FunctionComponent<NavProps> = ({
       </Link>
       <div className="flex">
         <NavItem path="about" text="About" />
-        <NavItem path="downloads" text="Download" />
-        <NavItem path="careers" text="Career" />
+        <NavItem path="downloads" text="Downloads" />
+        <NavItem path="careers" text="Careers" />
         <NavItem path="contact" text="Contact" />
         <NavItem path="sponsors" text="Sponsors" />
         <NavButton path="join" text="Sign Up" />
