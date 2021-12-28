@@ -22,7 +22,7 @@ const FooterCard: React.FunctionComponent<FooterCardProps> = ({
 
 const Footer: React.FunctionComponent = () => (
   <>
-    <div className="relative py-2 bottom-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:px-10 justify-center items-center bg-blue-500/20 dark:bg-gray-900">
+    <div className="relative py-2 bottom-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:px-10 justify-center items-center bg-blue-300/30 dark:bg-gray-900">
       <div>
         <Link
           to="/"
@@ -59,27 +59,30 @@ const Footer: React.FunctionComponent = () => (
           Contact
         </Link>
       </FooterCard>
-      <div className="flex items-center">
-        <SocialIcon
-          url="https://www.facebook.com/asocunsw/"
-          className="footer-icon"
-        />
-        <SocialIcon
-          url="https://twitter.com/asocunsw/"
-          className="footer-icon"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/company/actuarial-society-unsw/"
-          className="footer-icon"
-        />
-        <SocialIcon
-          url="https://www.youtube.com/channel/UCC1GYulg6p4XF3K3TccHgcw"
-          className="footer-icon"
-        />
-        <SocialIcon
-          url="https://www.instagram.com/asocunsw/"
-          className="footer-icon"
-        />
+      <div className="flex flex-col items-center">
+        <p className="font-semibold mb-2">Check out our Socials!</p>
+        <div>
+          <SocialIcon
+            url="https://www.facebook.com/asocunsw/"
+            className="footer-icon"
+          />
+          <SocialIcon
+            url="https://twitter.com/asocunsw/"
+            className="footer-icon"
+          />
+          <SocialIcon
+            url="https://www.linkedin.com/company/actuarial-society-unsw/"
+            className="footer-icon"
+          />
+          <SocialIcon
+            url="https://www.youtube.com/channel/UCC1GYulg6p4XF3K3TccHgcw"
+            className="footer-icon"
+          />
+          <SocialIcon
+            url="https://www.instagram.com/asocunsw/"
+            className="footer-icon"
+          />
+        </div>
       </div>
     </div>
   </>
