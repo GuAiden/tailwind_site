@@ -144,8 +144,8 @@ const ScrollDownIcon: React.FunctionComponent = () => (
 
 const SocialInfo: React.FunctionComponent = () => (
   <>
-    <div className="relative h-full skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 items-center">
-      <div className="-skew-y-6 py-10">
+    <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 items-center">
+      <div className="skew-y-6 py-10">
         <h1 className="text-center text-2xl font-semibold font-MontSerrat mx-auto">
           Check out our Socials!
         </h1>

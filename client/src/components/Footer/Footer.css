@@ -9,7 +9,8 @@
     font-MontSerrat
     hover:text-sky-600
     transition ease-in-out duration-150
-    dark:hover:text-blue-600 w-fit;
+    dark:hover:text-blue-600 w-fit
+    my-2;
 }
 
 .footer-icon {
