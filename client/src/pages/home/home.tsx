@@ -1,14 +1,15 @@
 /* eslint-disable global-require */
 import React from 'react';
 import './home.css';
-import graphDesign from '../assets/images/graph.png';
-import chartDesign from '../assets/images/coolChart.png';
-import barDesign from '../assets/images/coolBar.png';
-import lightGraphDesign from '../assets/images/lightChart.png';
-import lightLineDesign from '../assets/images/lightLineChart.png';
-import lightBarDesign from '../assets/images/lightBar.png';
-import { useDarkTheme } from '../App';
+import graphDesign from '../../assets/images/graph.png';
+import chartDesign from '../../assets/images/coolChart.png';
+import barDesign from '../../assets/images/coolBar.png';
+import lightGraphDesign from '../../assets/images/lightChart.png';
+import lightLineDesign from '../../assets/images/lightLineChart.png';
+import lightBarDesign from '../../assets/images/lightBar.png';
+import { useDarkTheme } from '../../App';
 import Events from './events.json';
+import Section from '../../components/common/section';
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
@@ -60,8 +61,8 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
       <p className="text-gray-400 p-2">{description}</p>
       <h4 className="p-2">
         {startDate} {endDate}
-      </h4> */}
-      {/* <img
+      </h4>
+      <img
         src="https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/248596834_2432745236857806_8208171371330292695_n.png?_nc_cat=107&_nc_rgb565=1&ccb=1-5&_nc_sid=e3f864&_nc_ohc=gaXJmC40JswAX-SvcF3&_nc_oc=AQmwYdd7vrR3mhfr1yjwvw9eQapfTAWO82JogUv54AYBoj-A1Gb2YQrf2gNkf2d3Tsk&tn=stnQroAJSPBsJJPx&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT_DGG9U4OiPGjXOXBZIadTZj9CmfC6lSRHD78EBZzfTXA&oe=61C96EC4"
         className="w-[100%] h-[100%] overflow-visible"
       /> */}
@@ -71,7 +72,7 @@ const EventCard: React.FunctionComponent<EventCardProps> = ({
 
 const EventScrollView: React.FunctionComponent = () => (
   <>
-    <h1 className="text-center mt-10 tracking-tight font-extrabold text-2xl dark-text">
+    <h1 className="text-center tracking-tight font-extrabold text-2xl dark-text">
       Upcoming Events
     </h1>
     <div className="flex md:w-4/6 h-fit mx-auto mb-20">
@@ -121,7 +122,7 @@ const SponsorsGrid: React.FunctionComponent = () => (
 );
 
 const ScrollDownIcon: React.FunctionComponent = () => (
-  <div className="flex justify-center mt-10 animate-bounce dark:text-white">
+  <div className="flex justify-center my-10 animate-bounce dark:text-white">
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +144,14 @@ const ScrollDownIcon: React.FunctionComponent = () => (
 
 const SocialInfo: React.FunctionComponent = () => (
   <>
-    <div className="absolute py-64 skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 min-w-full content-none" />
-    <h1 className="relative text-center text-2xl font-semibold font-MontSerrat mx-auto mt-48">
-      Check out our Socials!
-    </h1>
-    <div className="relative my-auto flex justify-center mt-6"> </div>
+    <div className="relative h-full skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 items-center">
+      <div className="-skew-y-6 py-10">
+        <h1 className="text-center text-2xl font-semibold font-MontSerrat mx-auto">
+          Check out our Socials!
+        </h1>
+        <div className="my-auto flex justify-center mt-6">YOYOYO</div>
+      </div>
+    </div>
   </>
 );
 
@@ -155,7 +159,7 @@ const HomeInfo: React.FunctionComponent = () => {
   const darkTheme = useDarkTheme();
   return (
     <>
-      <div className="relative flex justify-center pointer-events-none pt-10 md:pt-32">
+      <div className="relative flex justify-center pointer-events-none md:pt-20">
         <div className="grid grid-cols-2 w-5/6 md:w-4/6 gap-24">
           <div className="col-auto">
             <div className="flex flex-col dark:text-white text-black font-MontSerrat dark-transition">
@@ -189,11 +193,19 @@ const HomeInfo: React.FunctionComponent = () => {
 
 const Home: React.FunctionComponent = () => (
   <>
-    <HomeInfo />
-    <SponsorsGrid />
+    <Section>
+      <HomeInfo />
+    </Section>
+    <Section>
+      <SponsorsGrid />
+    </Section>
     <ScrollDownIcon />
-    <EventScrollView />
-    <SocialInfo />
+    <Section>
+      <EventScrollView />
+    </Section>
+    <Section>
+      <SocialInfo />
+    </Section>
   </>
 );
 

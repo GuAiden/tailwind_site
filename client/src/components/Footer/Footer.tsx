@@ -22,11 +22,17 @@ const FooterCard: React.FunctionComponent<FooterCardProps> = ({
 
 const Footer: React.FunctionComponent = () => (
   <>
-    <div className="relative py-2 bottom-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:px-10 justify-center items-center bg-blue-300/30 dark:bg-gray-900">
+    <div className="relative -skew-y-3 my-8 py-8 content-none h-full overflow-hidden z-50">
+      <div className="absolute top-0 h-3/5 right-2/3 w-full content-none py-4 bg-gray-700" />
+      <div className="absolute bottom-1 h-3/5 right-3/4 w-full content-none py-1 bg-blue-400/80" />
+      <div className="absolute top-0 h-3/5 left-2/3 w-full content-none py-4 bg-gray-700" />
+      <div className="absolute bottom-1 h-3/5 left-3/4 w-full content-none py-1 bg-blue-400/80" />
+    </div>
+    <div className="relative py-2 bottom-0 min-w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:px-10 justify-center items-center dark:bg-neutral-900">
       <div>
         <Link
           to="/"
-          className="flex text-xl text-black my-auto dark:text-white font-MontSerrat font-bold z-50 dark:z-50 nav-text"
+          className="flex text-xl w-fit text-black my-auto dark:text-white font-MontSerrat font-bold z-50 dark:z-50 nav-text"
         >
           <img
             width="29"
@@ -60,7 +66,7 @@ const Footer: React.FunctionComponent = () => (
         </Link>
       </FooterCard>
       <div className="flex flex-col items-center">
-        <p className="font-semibold mb-2">Check out our Socials!</p>
+        <p className="font-semibold mb-2 dark-text">Check out our Socials!</p>
         <div>
           <SocialIcon
             url="https://www.facebook.com/asocunsw/"

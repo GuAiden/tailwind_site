@@ -25,7 +25,7 @@
 .event-card {
   @apply relative flex-shrink-0 max-w-[90%] md:min-w-[40%] h-fit overflow-hidden rounded-3xl dark:bg-neutral-900 
   mx-5 snap-center font-MontSerrat dark:text-white text-black shadow-xl dark:shadow-slate-700 dark:shadow-md hover:shadow-xl hover:shadow-sky-300
-  transition ease-linear duration-200 dark:hover:shadow-xl dark:hover:shadow-slate-700 hover:scale-105 my-auto;
+  transition ease-linear duration-200 dark:hover:shadow-xl dark:hover:shadow-slate-700 hover:scale-105 my-auto cursor-pointer;
 }
 
 .sponsor-image {
