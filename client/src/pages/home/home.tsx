@@ -149,9 +149,9 @@ const ScrollDownIcon: React.FunctionComponent = () => (
 const SocialInfo: React.FunctionComponent = () => (
   <>
     <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-400/80 via-blue-400/80 to-indigo-400/80">
-      <div className="flex skew-y-6 pt-32 pb-16 justify-center">
-        <div className="grid grid-cols-2 md:w-3/5">
-          <div className="flex justify-start flex-col">
+      <div className="flex skew-y-6 justify-center">
+        <div className="grid grid-cols-2 md:w-4/5">
+          <div className="flex justify-start mt-20 flex-col py-32">
             <h2 className="text-xl font-bold font-MontSerrat text-indigo-700">
               Get Involved!
             </h2>
@@ -160,15 +160,26 @@ const SocialInfo: React.FunctionComponent = () => (
             </p>
             <p className="font-MontSerrat pt-5">
               ASOC is run by dedicated volunteers who are students currently
-              studying ACtuarial Studies at UNSW. We're always keen to have
+              studying Actuarial Studies at UNSW. We're always keen to have
               enthusiastic and dedicated people on the team, so be sure to like
               our Facebook page to keep updated on volunteering opportunities.
             </p>
-            <button className="rounded-full bg-sky-800 w-fit mt-10 p-3 hover:bg-sky-600 transition ease-linear duration-100">
-              Join us on Sparc!
-            </button>
+            <div className="flex flex-row">
+              <button className="follow-button">Join us on Sparc</button>
+              <button className="follow-button">Register now</button>
+              <button className="follow-button">Check our Facebook</button>
+            </div>
           </div>
-          <div className="flex justify-center">Some images</div>
+          <div className="flex flex-col justify-center pb-16 items-center">
+            <img
+              src="https://asoc.unsw.edu.au/images/web/home/volunteer2019.jpg"
+              className="rounded w-max max-h-64 pb-2"
+            />
+            <img
+              src="https://asoc.unsw.edu.au/images/web/home/peer2018.jpg"
+              className="rounded w-max max-h-64 pt-2"
+            />
+          </div>
         </div>
       </div>
     </div>

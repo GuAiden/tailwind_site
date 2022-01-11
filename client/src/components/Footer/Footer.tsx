@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
 import { BlueGrayStripes } from '../common/stripes';
+import SocialIconBar from '../common/SocialIconBar';
 
 type FooterCardProps = {
   title: string;
@@ -72,28 +72,7 @@ const Footer: React.FunctionComponent = () => (
           <p className="dark-text tracking-wider text-gray-700">
             Follow Our Socials!
           </p>
-          <div className="my-2">
-            <SocialIcon
-              url="https://www.facebook.com/asocunsw/"
-              className="footer-icon"
-            />
-            <SocialIcon
-              url="https://twitter.com/asocunsw/"
-              className="footer-icon"
-            />
-            <SocialIcon
-              url="https://www.linkedin.com/company/actuarial-society-unsw/"
-              className="footer-icon"
-            />
-            <SocialIcon
-              url="https://www.youtube.com/channel/UCC1GYulg6p4XF3K3TccHgcw"
-              className="footer-icon"
-            />
-            <SocialIcon
-              url="https://www.instagram.com/asocunsw/"
-              className="footer-icon"
-            />
-          </div>
+          <SocialIconBar />
           <p className="dark-text tracking-wider">mail@asoc.unsw.edu.au</p>
         </div>
       </div>

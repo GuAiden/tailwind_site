@@ -31,3 +31,7 @@
 .sponsor-image {
   @apply mx-auto w-[25%] md:w-[50%] max-h-[50%] my-auto mt-5;
 }
+
+.follow-button {
+  @apply rounded-full bg-sky-800 w-fit mt-10 p-3 hover:bg-sky-600 transition ease-linear duration-100 mx-3;
+}
