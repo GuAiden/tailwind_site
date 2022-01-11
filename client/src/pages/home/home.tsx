@@ -10,7 +10,10 @@ import lightBarDesign from '../../assets/images/lightBar.png';
 import { useDarkTheme } from '../../App';
 import Events from './events.json';
 import Section from '../../components/common/section';
-import { LeftSkyBlueStripe, RightSkyBlueStripe } from '../../components/common/stripes';
+import {
+  LeftSkyBlueStripe,
+  RightSkyBlueStripe,
+} from '../../components/common/stripes';
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
@@ -146,14 +149,26 @@ const ScrollDownIcon: React.FunctionComponent = () => (
 const SocialInfo: React.FunctionComponent = () => (
   <>
     <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-400/80 via-blue-400/80 to-indigo-400/80">
-      <div className="flex skew-y-6 py-32 justify-center">
-        <div className="grid grid-cols-2 md:w-3/5 place-items-center">
-          <div>
-            <h2 className="text-xl">
-              The world's most powerful and easy-to-use api
+      <div className="flex skew-y-6 pt-32 pb-16 justify-center">
+        <div className="grid grid-cols-2 md:w-3/5">
+          <div className="flex justify-start flex-col">
+            <h2 className="text-xl font-bold font-MontSerrat text-indigo-700">
+              Get Involved!
             </h2>
+            <p className="text-3xl font-MontSerrat pt-2 font-bold text-blue-700">
+              Volunteer || Coordinate || Join Teams
+            </p>
+            <p className="font-MontSerrat pt-5">
+              ASOC is run by dedicated volunteers who are students currently
+              studying ACtuarial Studies at UNSW. We're always keen to have
+              enthusiastic and dedicated people on the team, so be sure to like
+              our Facebook page to keep updated on volunteering opportunities.
+            </p>
+            <button className="rounded-full bg-sky-800 w-fit mt-10 p-3 hover:bg-sky-600 transition ease-linear duration-100">
+              Join us on Sparc!
+            </button>
           </div>
-          <div>Some images</div>
+          <div className="flex justify-center">Some images</div>
         </div>
       </div>
     </div>
