@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import { BlueGrayStripes } from '../common/stripes';
 
 type FooterCardProps = {
   title: string;
@@ -24,13 +25,10 @@ const FooterCard: React.FunctionComponent<FooterCardProps> = ({
 
 const Footer: React.FunctionComponent = () => (
   <>
-    <div className="relative -skew-y-6 my-12 py-8 content-none h-full overflow-hidden z-50">
-      <div className="absolute top-0 h-3/5 right-2/3 w-full content-none py-4 bg-gray-800" />
-      <div className="absolute bottom-1 h-3/5 right-3/4 w-full content-none py-1 bg-blue-500/80" />
-      <div className="absolute top-0 h-3/5 left-2/3 w-full content-none py-4 bg-gray-800" />
-      <div className="absolute bottom-1 h-3/5 left-3/4 w-full content-none py-1 bg-blue-500/80" />
+    <div className="my-10">
+      <BlueGrayStripes />
     </div>
-    <div className="relative py-2 bottom-0 min-w-full grid grid-cols-1 xl:grid-cols-3 md:px-10 justify-items-center items-center dark:bg-neutral-900">
+    <div className="relative py-2 bottom-0 min-w-full grid grid-cols-1 xl:grid-cols-3 md:px-10 justify-items-center items-center">
       <div className="mb-5 md:lg-0">
         <Link
           to="/"

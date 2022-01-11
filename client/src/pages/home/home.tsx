@@ -10,6 +10,7 @@ import lightBarDesign from '../../assets/images/lightBar.png';
 import { useDarkTheme } from '../../App';
 import Events from './events.json';
 import Section from '../../components/common/section';
+import { LeftSkyBlueStripe, RightSkyBlueStripe } from '../../components/common/stripes';
 
 const DarkImageGrid: React.FunctionComponent = () => (
   <div className="col-auto grid grid-cols-2 gap-3">
@@ -96,7 +97,7 @@ const SponsorsGrid: React.FunctionComponent = () => (
     {/* <div className="flex justify-center mt-20">
       <h2 className="dark-text text-2xl font-semibold">Sponsors</h2>
     </div> */}
-    <div className="grid grid-cols-2 md:grid-cols-4 md:w-4/6 h-fit mx-auto mt-10">
+    <div className="grid grid-cols-2 md:grid-cols-4 md:w-4/6 h-fit mx-auto">
       <img
         src="https://asoc.unsw.edu.au/images/web/sponsors/principal/actuaries-institute.png"
         className="sponsor-image"
@@ -122,7 +123,7 @@ const SponsorsGrid: React.FunctionComponent = () => (
 );
 
 const ScrollDownIcon: React.FunctionComponent = () => (
-  <div className="flex justify-center my-10 animate-bounce dark:text-white">
+  <div className="flex justify-center my-5 animate-bounce dark:text-white">
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -144,12 +145,16 @@ const ScrollDownIcon: React.FunctionComponent = () => (
 
 const SocialInfo: React.FunctionComponent = () => (
   <>
-    <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-300/80 via-blue-300/80 to-indigo-400/80 items-center">
-      <div className="skew-y-6 py-10">
-        <h1 className="text-center text-2xl font-semibold font-MontSerrat mx-auto">
-          Check out our Socials!
-        </h1>
-        <div className="my-auto flex justify-center mt-6">YOYOYO</div>
+    <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-400/80 via-blue-400/80 to-indigo-400/80">
+      <div className="flex skew-y-6 py-32 justify-center">
+        <div className="grid grid-cols-2 md:w-3/5 place-items-center">
+          <div>
+            <h2 className="text-xl">
+              The world's most powerful and easy-to-use api
+            </h2>
+          </div>
+          <div>Some images</div>
+        </div>
       </div>
     </div>
   </>
@@ -204,7 +209,9 @@ const Home: React.FunctionComponent = () => (
       <EventScrollView />
     </Section>
     <Section>
+      <RightSkyBlueStripe />
       <SocialInfo />
+      <LeftSkyBlueStripe />
     </Section>
   </>
 );
