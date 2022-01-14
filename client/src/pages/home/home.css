@@ -33,5 +33,9 @@
 }
 
 .follow-button {
-  @apply rounded-full bg-sky-800 w-fit mt-10 p-3 hover:bg-sky-600 transition ease-linear duration-100 mx-3;
+  @apply rounded-full bg-sky-800 w-fit p-3 hover:bg-sky-600 transition ease-linear duration-100 mx-3;
+}
+
+.left-cyan-border {
+  @apply before:border-l-2 before:border-l-blue-600 before:pl-2;
 }

@@ -28,8 +28,8 @@ const Footer: React.FunctionComponent = () => (
     <div className="my-10">
       <BlueGrayStripes />
     </div>
-    <div className="relative py-2 bottom-0 min-w-full grid grid-cols-1 xl:grid-cols-3 md:px-10 justify-items-center items-center">
-      <div className="mb-5 md:lg-0">
+    <div className="relative md:w-4/6 py-2 bottom-0 min-w-full grid grid-cols-1 xl:grid-cols-3 md:px-10 items-center">
+      <div className="mb-5 justify-self-center">
         <Link
           to="/"
           className="flex text-xl w-fit text-black my-auto dark:text-white font-MontSerrat font-bold z-50 dark:z-50 nav-text"
@@ -43,7 +43,7 @@ const Footer: React.FunctionComponent = () => (
           ASOC
         </Link>
       </div>
-      <div className="grid grid-cols-2 gap-x-44">
+      <div className="grid justify-self-start grid-cols-2 gap-x-44">
         <FooterCard title="Learn More">
           <Link to="about" className="footer-text">
             About
@@ -67,14 +67,12 @@ const Footer: React.FunctionComponent = () => (
           </Link>
         </FooterCard>
       </div>
-      <div className="flex">
-        <div className="flex flex-col items-center">
-          <p className="dark-text tracking-wider text-gray-700">
-            Follow Our Socials!
-          </p>
-          <SocialIconBar />
-          <p className="dark-text tracking-wider">mail@asoc.unsw.edu.au</p>
-        </div>
+      <div className="flex flex-col justify-self-start">
+        <p className="dark-text tracking-wider text-gray-700">
+          Follow Our Socials!
+        </p>
+        <SocialIconBar />
+        <p className="dark-text tracking-wider">mail@asoc.unsw.edu.au</p>
       </div>
     </div>
   </>

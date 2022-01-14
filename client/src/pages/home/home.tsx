@@ -146,38 +146,112 @@ const ScrollDownIcon: React.FunctionComponent = () => (
   </div>
 );
 
+const AsocInfo: React.FunctionComponent = () => (
+  <>
+    <div className="flex mx-auto md:w-4/6 pt-10">
+      <div className="flex flex-col">
+        <h4 className="text-indigo-600 font-MontSerrat font-semibold">
+          Why ASOC
+        </h4>
+        <h2 className="text-blue-600 font-MontSerrat font-bold text-2xl pt-5 w-5/6">
+          Get a head start on your career and meet fellow peers and friends
+        </h2>
+        <div className="grid grid-cols-4 pt-10">
+          <div className="flex flex-col mr-5">
+            <p className="dark-text left-cyan-border font-semibold dark-text-gray">
+              Peer Programs
+            </p>
+            <p className="pt-2 pl-2 dark-text-gray">
+              Peer Mentoring sessions run in Term 1 and is an excellend
+              opportunity to meet fellow first years and get useful tips from
+              ASOC veterans. You can sign up for peer mentoring via{' '}
+              <a
+                href="/join"
+                className="text-blue-600 font-semibold hover:text-blue-400 transition duration-200 ease-linear"
+              >
+                ASOC forms.
+              </a>
+            </p>
+          </div>
+          <div className="flex flex-col mr-5">
+            <p className="dark-text left-cyan-border font-semibold dark-text-gray">
+              Free BBQs
+            </p>
+            <p className="pt-2 pl-2 dark-text-gray">
+              Asoc holds sponsored BBQs throughout the year. These BBQs are
+              <text className="font-semibold text-blue-600">
+                {' '}
+                completely free{' '}
+              </text>
+              students and we sometimes have representatives from sponsor
+              companies stop by. Stay alert for notifications regarding these
+              bbqs.
+            </p>
+          </div>
+          <div className="flex flex-col mr-5">
+            <p className="dark-text left-cyan-border font-semibold dark-text-gray">
+              Careers and Networking
+            </p>
+            <p className="pt-2 pl-2 dark-text-gray">
+              Get a headstart on your career through ASOC events that are
+              sponsored by some of the
+              <text className="font-semibold text-blue-600">
+                {' '}
+                largest employers of actuaries
+              </text>
+              .
+            </p>
+          </div>
+          <div className="flex flex-col mr-5">
+            <p className="dark-text left-cyan-border font-semibold dark-text-gray">
+              Social Sporting Events
+            </p>
+            <p className="pt-2 pl-2 dark-text-gray">
+              <text className="font-semibold text-blue-600">
+                Meet new people
+              </text>{' '}
+              and stay fit! Social sports as well as competetive events are held
+              throughout the year.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+);
+
 const SocialInfo: React.FunctionComponent = () => (
   <>
     <div className="relative h-full -skew-y-6 bg-gradient-to-tr from-sky-400/80 via-blue-400/80 to-indigo-400/80">
       <div className="flex skew-y-6 justify-center">
-        <div className="grid grid-cols-2 md:w-4/5">
-          <div className="flex justify-start mt-20 flex-col py-32">
-            <h2 className="text-xl font-bold font-MontSerrat text-indigo-700">
+        <div className="grid grid-cols-2 md:w-4/6">
+          <div className="flex justify-start mt-10 flex-col py-32">
+            <h2 className="text-xl font-bold font-MontSerrat text-indigo-600">
               Get Involved!
             </h2>
-            <p className="text-3xl font-MontSerrat pt-2 font-bold text-blue-700">
-              Volunteer || Coordinate || Join Teams
+            <p className="text-3xl font-MontSerrat pt-5 font-bold text-blue-700">
+              Volunteer | Coordinate | Join Teams
             </p>
-            <p className="font-MontSerrat pt-5">
+            <p className="font-MontSerrat pt-10">
               ASOC is run by dedicated volunteers who are students currently
               studying Actuarial Studies at UNSW. We're always keen to have
               enthusiastic and dedicated people on the team, so be sure to like
               our Facebook page to keep updated on volunteering opportunities.
             </p>
-            <div className="flex flex-row">
-              <button className="follow-button">Join us on Sparc</button>
-              <button className="follow-button">Register now</button>
-              <button className="follow-button">Check our Facebook</button>
+            <div className="flex flex-row pt-10">
+              <button className="follow-button dark-text">
+                Join us on Sparc
+              </button>
+              <button className="follow-button dark-text">Register now</button>
+              <button className="follow-button dark-text">
+                Check our Facebook
+              </button>
             </div>
           </div>
-          <div className="flex flex-col justify-center pb-16 items-center">
+          <div className="flex flex-col justify-center items-start">
             <img
               src="https://asoc.unsw.edu.au/images/web/home/volunteer2019.jpg"
-              className="rounded w-max max-h-64 pb-2"
-            />
-            <img
-              src="https://asoc.unsw.edu.au/images/web/home/peer2018.jpg"
-              className="rounded w-max max-h-64 pt-2"
+              className="rounded-xl w-max max-h-96 pb-2 ml-10 shadow-lg"
             />
           </div>
         </div>
@@ -238,6 +312,9 @@ const Home: React.FunctionComponent = () => (
       <RightSkyBlueStripe />
       <SocialInfo />
       <LeftSkyBlueStripe />
+    </Section>
+    <Section>
+      <AsocInfo />
     </Section>
   </>
 );
