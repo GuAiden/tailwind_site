@@ -2,6 +2,7 @@ import React from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './navBar.css';
+import { NavItem, NavButton, NavDropdown } from './navComponents';
 
 type NavProps = {
   darkTheme: boolean;
@@ -29,29 +30,6 @@ const ThemeIcon: React.FunctionComponent<NavProps> = ({
   </>
 );
 
-type NavItemProps = {
-  path: string;
-  text: string;
-};
-
-const NavItem: React.FunctionComponent<NavItemProps> = ({
-  path,
-  text,
-}: NavItemProps) => (
-  <Link to={path} className="nav-text">
-    {text}
-  </Link>
-);
-
-const NavButton: React.FunctionComponent<NavItemProps> = ({
-  path,
-  text,
-}: NavItemProps) => (
-  <Link to={path} className="nav-text">
-    <button className="nav-button">{text}</button>
-  </Link>
-);
-
 const NavBar: React.FunctionComponent<NavProps> = ({
   darkTheme,
   handleDarkTheme,
@@ -71,7 +49,17 @@ const NavBar: React.FunctionComponent<NavProps> = ({
         ASOC
       </Link>
       <div className="flex">
-        <NavItem path="about" text="About" />
+        <NavDropdown
+          title="About"
+          options={[
+            { path: '/about/ASOC', text: 'ASOC' },
+            { path: '/about/team', text: 'Team' },
+            { path: '/about/constitution', text: 'Constituion' },
+            { path: '/about/privacy', text: 'Privacy Policy' },
+            { path: '/about/actuarial', text: 'Actuarial Studies' },
+            { path: '/about/exemptions', text: 'Exemptions' },
+          ]}
+        />
         <NavItem path="downloads" text="Downloads" />
         <NavItem path="careers" text="Careers" />
         <NavItem path="contact" text="Contact" />

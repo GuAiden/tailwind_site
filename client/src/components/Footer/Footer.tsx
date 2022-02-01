@@ -55,7 +55,7 @@ const Footer: React.FunctionComponent = () => (
             Privacy Policy
           </Link>
         </FooterCard>
-        <FooterCard title="Other stuff">
+        <FooterCard title="Other">
           <Link to="downloads" className="footer-text">
             Download
           </Link>
