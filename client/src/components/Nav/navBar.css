@@ -30,8 +30,8 @@ hover:bg-sky-500 dark:hover:bg-blue-600
 
 .dropdown-text {
   @apply dark:text-white
+  flex items-center
   font-MontSerrat
-  my-auto
   group-hover:text-sky-600
   transition ease-in-out duration-150
   dark:group-hover:text-blue-600;

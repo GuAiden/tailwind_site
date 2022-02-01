@@ -26,9 +26,15 @@ export const NavButton: React.FunctionComponent<NavItemProps> = ({
   </Link>
 );
 
+type NavDropdownItemProps = {
+  text: string;
+  path: string;
+  icon?: JSX.Element;
+};
+
 type NavDropdownProps = {
   title: string;
-  options: NavItemProps[];
+  options: NavDropdownItemProps[];
 };
 
 export const NavDropdown: React.FunctionComponent<NavDropdownProps> = ({
@@ -71,33 +77,36 @@ export const NavDropdown: React.FunctionComponent<NavDropdownProps> = ({
           leaveTo="opacity-0 shadow-none"
         >
           <Popover.Panel
-            className="absolute z-50 w-96 mt-5 shadow-2xl bg-neutral-200 rounded"
+            className="absolute z-50 w-[26rem] mt-5 shadow-2xl bg-neutral-200 rounded p-2"
             ref={setPopperElement}
             style={styles.popper}
             {...attributes.popper}
           >
             <div className="flex">
-              <div className="grid grid-cols-2 gap-x-10 mx-auto">
+              <div className="grid grid-cols-2 gap-x-10 mx-auto my-auto">
                 {options.map((option) => (
-                  <div className="block">
+                  <>
                     <div className="w-fit group">
                       <Link to={option.path}>
-                        <span className="dropdown-text">{option.text}</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 ml-2 my-auto inline-block opacity-0 group-hover:opacity-100 transition ease-linear duration-200 scale-75 group-hover:scale-100"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
+                        <div className="dropdown-text">
+                          <div className="inline-block mr-2">{option.icon}</div>
+                          {option.text}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4 ml-1 my-auto inline-flex opacity-0 group-hover:text-black group-hover:opacity-100 transition ease-linear duration-200 scale-75 group-hover:scale-100"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        </div>
                       </Link>
                     </div>
-                  </div>
+                  </>
                 ))}
               </div>
             </div>
