@@ -15,7 +15,7 @@ const FooterCard: React.FunctionComponent<FooterCardProps> = ({
 }: FooterCardProps) => (
   <>
     <div className="flex flex-col">
-      <h4 className="font-medium text-lg text-gray-700 dark:text-white">
+      <h4 className="font-medium text-lg text-gray-700 dark:text-white tracking-wider">
         {title}
       </h4>
       {children}
@@ -32,7 +32,7 @@ const Footer: React.FunctionComponent = () => (
       <div className="mb-5 justify-self-center">
         <Link
           to="/"
-          className="flex text-xl w-fit text-black my-auto dark:text-white font-MontSerrat font-bold z-50 dark:z-50 nav-text"
+          className="flex text-xl w-fit text-black my-auto dark:text-white font-MontSerrat font-bold z-50 dark:z-50 nav-text tracking-wider"
         >
           <img
             width="29"
@@ -68,7 +68,7 @@ const Footer: React.FunctionComponent = () => (
         </FooterCard>
       </div>
       <div className="flex flex-col justify-self-start">
-        <p className="dark-text tracking-wider text-gray-700">
+        <p className="dark-text tracking-wider text-gray-700 font-semibold">
           Follow Our Socials!
         </p>
         <SocialIconBar />

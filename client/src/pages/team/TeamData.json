@@ -1,0 +1,73 @@
+{
+  "presidents": [
+    {
+      "name": "Kelly Chu",
+      "role": "President",
+      "bio": "Meet our wonderful president for 2022, Kelly Chu! A true master of team image, she has now become the face of ASOC for everyone to meet. If you ever need internship help, Kelly is your go to. She's only been rejected by chatime so far! If you don't see her tirelessly working behind the scenes to make ASOC as great as it can be, just know that she would be probably convincing someone to come to an event. She's always a friendly face, so next time you see her always come tell the BNOC herself hi! Just know that if you go for any kind of food, get ready to spend 10 minutes waiting to take pics before eating.",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/kelly.png",
+      "email": "something@gmail.com"
+    }
+  ],
+  "vicePresidents": [
+    {
+      "name": "Rishav Roy",
+      "role": "Vice President Activities",
+      "bio": "If you’ve ever been to 2peck at night and have seen a 6ft tall deloitteful gentleman donning a black coat or a yellow shirts jumper – yep you’ve probably just met our very own VPA, Rishav Roy. Right from the get-go, you’ll find that Rishav is a super easy-going and hilarious guy who is always down to have some fun. As a camp organiser veteran, Rishav has proven himself to be a hardworking leader with the ability to hype a whole crowd, so we know for sure this year ASOC will be having some banger events to look out for. Anyways, despite his unlimited capacity of cooked jokes, Rishav is certainly one of the kindest and most down-to-earth people in ASOC so be sure to come over and say hi and maybe you can even ask him about his infamous penguin slide.",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/rishav.png",
+      "email": "something@gmail.com"
+    },
+    {
+      "name": "Michelle Xie",
+      "role": "Vice President External",
+      "bio": "Introducing our one and only VPE Michelle Xie! This absolute beast of a human being has her life so organised she wakes up at 9AM to hit the gym. That’s right you heard it right – 9AM. What an absolute unit. When she’s not grinding at the gym you can catch Michelle at the Apple Store saving customer’s lives by solving all their tech problems. Aside from being a gun in every way possible, Michelle will also be there to listen to all your problems. She is so caring and always willing to listen to your problems and isn’t afraid to give you the honest truth – something that we all need. With such crazy skillsets and the biggest heart, you can trust Michelle to land you the best sponsors and the best opportunities in getting that internship in 2022!",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/michelle-x.png",
+      "email": "something@gmail.com"
+    },
+    {
+      "name": "Christina Shi",
+      "role": "Vice President Internal",
+      "bio": "Haven’t heard of the BIGGEST BNOC Christina Shi?  Our adorable little VPI is surprisingly loaded with energy and will always be there to brighten up your day. Although her arguing abilities are excellent, she will always be there if you need someone to talk to about just about anything. Don’t ever talk to her about games or invite her to join your gaming adventures as her one and only reply for that will be “ABSOLUTELY NOT”. Apart from her delusional and negative mindset on video games, she is an incredibly intelligent and understanding person. If you need help with your studies or even decisions you need to make in life, Chrissy will be the best person to go to! ",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/chrissy.png",
+      "email": "something@gmail.com"
+    }
+  ],
+  "treasurer": [
+    {
+      "name": "Arnav Bharadwaj",
+      "role": "Treasurer",
+      "bio": "If you've ever had the pleasure of meeting Arnav, you'll know 2 things: 1. that this man is always late and 2. that this man has no mute button. Whenever he's around, whether it be the next rave, a sports event or the inaugural camp, every event is guaranteed to be boisterous and fun. When he isn't too busy drag racing around Sydney and being a nuisance on the roads, you'll find this man pouring over the ASOC accounts and spreadsheets, budgeting to ensure that your events stay affordable but fun.",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/arnav.png",
+      "email": "something@gmail.com"
+    }
+  ],
+  "director": [
+    {
+      "name": "Maria Zhang",
+      "role": "IT Director",
+      "bio": "Meet Maria – our one and only IT Director / part time ACTL God! Equipped with an iPad everywhere she goes, she’s always on the grind - whether that be the study grind or the Genshin grind or… the coffee grind. She’s a cafe connoisseur so hit her up for some brunch spots - as long as you don’t mind Jim coming along as well! Whether she is fixing up the ASOC website or dealing with any technical issues, Maria is efficient, hardworking but most importantly, friendly. With the warmest smile around, she’s super easy to approach - maybe she'll teach you how to Dean’s List or even some coding tips!",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/maria.png",
+      "email": "something@gmail.com"
+    },
+    {
+      "name": "Eva Wu",
+      "role": "Social Director",
+      "bio": "Introducing your Social Director Eva - our very own Actl / Law student, she is definitely one of the biggest brains out of us all! Not only is she super studious with a massive degree - but she also has a heart of gold and an infectious smile that makes you feel like her best friend. Despite being a BNOC who gets all the guys, she goes above and beyond to make you feel like the only person in her life. A testament to this is her willingness to go out despite living in the middle of nowhere and having less than 4 hours to her driver’s licence. Whether it’s for a laugh or for advice, Eva is your go to gal!",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/eva.png",
+      "email": "something@gmail.com"
+    },
+    {
+      "name": "Ishraq Ifaz",
+      "role": "Human Resources Director",
+      "bio": "Introducing our one and only sunshine HR Director – Ishraq! Although he is certainly one to engulf you with warmth and a smile, Ishraq is also seen in his natural habitat; that is handing out good advice and a good time! Besides this, he’s always on the grind, whether it be binging shows or grinding assignments. But no matter what the situation, this man is always ready to break a leg to be there for you. If you’re lucky enough to meet him, make sure you say Hello!",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/ishraq.png",
+      "email": "something@gmail.com"
+    },
+    {
+      "name": "Sharon Zhou",
+      "role": "Careers Director",
+      "bio": "Introducing our Careers Director and resident big-brain Sharon Zhou! Legend says that if you stand in her presence long enough, you’ll get a HD WAM and land yourself an internship at one of the Big 4. But don’t let her stacked resume and superior height intimidate you – she’s extremely down-to-earth and friendly so don’t be afraid to hit her up for a chat! When she isn’t gaming on her PC or searching for the best foods around Sydney, you’ll be sure to find her on the grind with her partner in crime Jim to set up careers events to keep you employed. ",
+      "photo": "https://asoc.unsw.edu.au/images/web/about/exec2022/sharon.png",
+      "email": "something@gmail.com"
+    }
+  ]
+}

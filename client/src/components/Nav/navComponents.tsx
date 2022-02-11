@@ -77,7 +77,7 @@ export const NavDropdown: React.FunctionComponent<NavDropdownProps> = ({
           leaveTo="opacity-0 shadow-none"
         >
           <Popover.Panel
-            className="absolute z-50 w-[26rem] mt-5 shadow-2xl bg-neutral-200 rounded p-2"
+            className="absolute z-50 w-[26rem] mt-5 shadow-2xl bg-neutral-100 dark:bg-neutral-900 rounded p-2"
             ref={setPopperElement}
             style={styles.popper}
             {...attributes.popper}
