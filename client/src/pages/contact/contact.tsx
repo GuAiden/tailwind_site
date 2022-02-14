@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../../components/common/section';
+import SocialIconBar from '../../components/common/SocialIconBar';
 import './contact.css';
 
 type ContactCardProps = {
@@ -66,6 +67,28 @@ const ContactPage: React.FunctionComponent = () => (
           body="For any IT issues, contact our technical department"
           email="it@asoc.unsw.edu.au"
         />
+      </div>
+    </Section>
+    <Section>
+      <div className="grid grid-cols-2 md:w-1/2 mx-auto gap-x-10">
+        <div className="flex flex-col dark-text">
+          <div className="font-semibold text-center">Join us on Discord</div>
+          <div className="text-center mt-3">
+            If you have technical questions, chat live with us in the official
+            <div className="text-indigo-600 inline-flex ml-1">
+              ASOC Discord server.
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col dark-text">
+          <div className="font-semibold text-center">
+            Check out our socials below!
+          </div>
+          <div className="text-center scale-90 mt-1">
+            <SocialIconBar />
+          </div>
+        </div>
       </div>
     </Section>
   </>
