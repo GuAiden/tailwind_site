@@ -1,0 +1,53 @@
+{
+    "events": [
+        {
+            "title": "Hello World",
+            "description": "This is the first event",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/248596834_2432745236857806_8208171371330292695_n.png?_nc_cat=107&ccb=1-5&_nc_sid=e3f864&_nc_ohc=X43-_RhLfr0AX8DkfH7&_nc_oc=AQmLkSP0pLnP1S7aQ_cnT0Bjqa_AQa5xRciDLgTRINsXCFrytiR4JHPpfeGiC0VkAVo&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT8apkGXTCaV9fypztkAiUwqZBD-2MoWdB3dcqDHnTIpyA&oe=61FCD944"
+        },
+        {
+            "title": "YOYOYOYO",
+            "description": "2nd bruv",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/241265119_2407341082731555_3917149280572904340_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=19026a&_nc_ohc=qerVNyl70-sAX_YWFfa&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT_Y-TZYS0f4puqDgpjP2Toiu0aZxONeGAC0sGNDLYeXww&oe=61FDAF11"
+        },
+        {
+            "title": "HIHIHI123",
+            "description": "third m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-1.fna.fbcdn.net/v/t1.6435-9/206205305_2314040575394940_6235997757985499107_n.png.jpg?_nc_cat=111&ccb=1-5&_nc_sid=19026a&_nc_ohc=BiX75xTAGUIAX-mxyx8&_nc_ht=scontent.fsyd11-1.fna&oh=00_AT-mnfUfTCJhjgYS0OGvDIBATvFODxIjocmjU45761QbKg&oe=621CE463"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-2.fna.fbcdn.net/v/t1.6435-9/181879391_2269519886513676_9053932008597706949_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=19026a&_nc_ohc=ermXaINMVGgAX_gsUAC&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT8Z1rutyGMEj21yNSBoscOOXiZlEJp6w-dKuyux1mU6hQ&oe=621EEB05"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/p180x540/241265119_2407341082731555_3917149280572904340_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=19026a&_nc_ohc=hmZ9aNz99tIAX_EI8rZ&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT-hdVKQRDQGnQgK9NK7jjN9H80Ccx80lxEIU0VqtrgJMA&oe=61C89B44"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-2.fna.fbcdn.net/v/t39.30808-6/s526x296/248718794_4504523139629826_6380945831293861450_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=340051&_nc_ohc=LW6i1f0RzkoAX8EwfGH&tn=stnQroAJSPBsJJPx&_nc_ht=scontent.fsyd11-2.fna&oh=00_AT_5Dox0UrVRTW2p2MSCh8CZm3NnDGjjzixGmdpfM9dmeQ&oe=61C9C5AE"
+        },
+        {
+            "title": "BYEBYEBYE123",
+            "description": "fourth m8",
+            "startDate": "23-07-2001 19:00",
+            "endDate": "24-07-2001 20:00",
+            "coverImageURL": "https://scontent.fsyd11-1.fna.fbcdn.net/v/t39.30808-6/p180x540/252061340_3101677583445185_2159405022297689669_n.jpg?_nc_cat=110&_nc_rgb565=1&ccb=1-5&_nc_sid=19026a&_nc_ohc=d8TOOWcFNXsAX8ot0fE&tn=stnQroAJSPBsJJPx&_nc_ht=scontent.fsyd11-1.fna&oh=00_AT_G5Yz-BTuuSSSkAUdWCHsy5PZozVWJChcgOe49UyL4Og&oe=61C8EADE"
+        }
+    ]
+}

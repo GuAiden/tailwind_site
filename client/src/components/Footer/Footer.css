@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-text {
+    @apply flex
+    text-gray-700
+    dark:text-gray-400
+    font-MontSerrat
+    hover:text-sky-600
+    transition ease-in-out duration-150
+    dark:hover:text-blue-600 w-fit
+    my-2;
+}
+
+.footer-icon {
+    @apply mx-2 
+    hover:scale-110
+    transition ease-linear duration-200
+}

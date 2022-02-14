@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.column-colour {
+  @apply bg-gradient-to-r 
+  from-cyan-400 via-sky-600 to-blue-500 py-16 
+  dark:from-blue-900 dark:via-gray-900 dark:to-neutral-900;
+};
+
+.dark-graph-image {
+  @apply rounded-2xl shadow-md shadow-slate-500 
+  dark:shadow-slate-700 dark:shadow-lg
+  transition ease-in-out duration-300
+  hidden dark:block;
+}
+
+.light-graph-image {
+  @apply rounded-2xl shadow-md shadow-slate-500 
+  dark:shadow-slate-700 dark:shadow-lg
+  transition ease-in-out duration-300
+  block dark:hidden;
+}
+
+.event-card {
+  @apply relative flex-shrink-0 max-w-[90%] md:min-w-[35%] h-fit overflow-hidden rounded-3xl dark:bg-neutral-900 
+  mx-5 snap-center font-MontSerrat dark:text-white text-black shadow-md dark:shadow-slate-700 dark:shadow-md hover:shadow-lg hover:shadow-sky-300
+  transition ease-linear duration-200 dark:hover:shadow-xl dark:hover:shadow-slate-700 hover:scale-105 my-auto cursor-pointer;
+}
+
+.sponsor-image {
+  @apply mx-auto w-[25%] md:w-[50%] max-h-[50%] my-auto mt-5;
+}
+
+.follow-button {
+  @apply rounded-full bg-sky-800 w-fit p-3 hover:bg-sky-600 transition ease-linear duration-100 mx-3;
+}
+
+.left-cyan-border {
+  @apply before:border-l-2 before:border-l-blue-600 before:pl-2;
+}
