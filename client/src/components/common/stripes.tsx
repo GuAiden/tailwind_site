@@ -36,3 +36,9 @@ export const RightSkyBlueStripe: React.FunctionComponent = () => (
     <div className="absolute top-2 h-3/5 left-2/3 w-72 content-none py-1 bg-sky-400/80" />
   </div>
 );
+
+export const PageDivider: React.FunctionComponent = () => (
+  <div className="relative py-2 h-full z-50">
+    <div className="w-4/6 mx-auto border-2 border-gray-400/50 rounded-full content-none h-full" />
+  </div>
+);

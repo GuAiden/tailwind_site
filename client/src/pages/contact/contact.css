@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-card {
+    @apply bg-gray-200/90 flex flex-col hover:scale-105 rounded
+    shadow-xl transition-all duration-200 ease-linear p-5 dark:bg-zinc-800/20 dark:shadow-md dark:text-white
+    justify-between
+}
