@@ -156,8 +156,8 @@ const AsocInfo: React.FunctionComponent = () => (
         <h2 className="text-blue-600 font-MontSerrat font-bold text-2xl pt-5 w-5/6">
           Get a head start on your career and meet fellow peers and friends
         </h2>
-        <div className="grid md:grid-cols-4 pt-10">
-          <div className="flex flex-col mr-5">
+        <div className="grid md:grid-cols-4 pt-3">
+          <div className="flex flex-col mr-5 mt-6">
             <p className="dark-text left-cyan-border font-semibold dark-text-gray">
               Peer Programs
             </p>
@@ -173,7 +173,7 @@ const AsocInfo: React.FunctionComponent = () => (
               </a>
             </p>
           </div>
-          <div className="flex flex-col mr-5">
+          <div className="flex flex-col mr-5 mt-6">
             <p className="dark-text left-cyan-border font-semibold dark-text-gray">
               Free BBQs
             </p>
@@ -188,7 +188,7 @@ const AsocInfo: React.FunctionComponent = () => (
               bbqs.
             </p>
           </div>
-          <div className="flex flex-col mr-5">
+          <div className="flex flex-col mr-5 mt-6">
             <p className="dark-text left-cyan-border font-semibold dark-text-gray">
               Careers and Networking
             </p>
@@ -202,7 +202,7 @@ const AsocInfo: React.FunctionComponent = () => (
               .
             </p>
           </div>
-          <div className="flex flex-col mr-5">
+          <div className="flex flex-col mr-5 mt-6">
             <p className="dark-text left-cyan-border font-semibold dark-text-gray">
               Social Sporting Events
             </p>
