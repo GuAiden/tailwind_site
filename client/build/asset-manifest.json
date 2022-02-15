@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa2864b0.css",
+    "main.js": "/static/js/main.d416a322.js",
+    "static/media/coolChart.png": "/static/media/coolChart.0a5390566cc6115dbdf6.png",
+    "static/media/lightLineChart.png": "/static/media/lightLineChart.9ec804fe54d76e5b82ea.png",
+    "static/media/coolBar.png": "/static/media/coolBar.7304aae97638ae218466.png",
+    "static/media/graph.png": "/static/media/graph.9713fa9b3abd358dd5f2.png",
+    "index.html": "/index.html",
+    "main.fa2864b0.css.map": "/static/css/main.fa2864b0.css.map",
+    "main.d416a322.js.map": "/static/js/main.d416a322.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa2864b0.css",
+    "static/js/main.d416a322.js"
+  ]
+}
