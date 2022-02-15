@@ -156,7 +156,7 @@ const AsocInfo: React.FunctionComponent = () => (
         <h2 className="text-blue-600 font-MontSerrat font-bold text-2xl pt-5 w-5/6">
           Get a head start on your career and meet fellow peers and friends
         </h2>
-        <div className="grid grid-cols-4 pt-10">
+        <div className="grid md:grid-cols-4 pt-10">
           <div className="flex flex-col mr-5">
             <p className="dark-text left-cyan-border font-semibold dark-text-gray">
               Peer Programs
