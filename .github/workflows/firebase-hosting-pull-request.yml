@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       -	name: Setup Firebase Hosting on PR
-      	run: |
-      	  cd client
+      	working-directory: ./client
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
