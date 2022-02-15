@@ -60,7 +60,7 @@ const ContactPage: React.FunctionComponent = () => (
         <ContactCard
           title="Sponsorship"
           body="Contact our VPE for sponsorship interests"
-          email="mail@asoc.unsw.edu.au"
+          email="vp.external@asoc.unsw.edu.au"
         />
         <ContactCard
           title="Technical"
